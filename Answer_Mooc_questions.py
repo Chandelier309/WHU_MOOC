@@ -2,7 +2,7 @@
 from selenium.common.exceptions import WebDriverException
 
 
-chro = input('输入你下载的chromedriver的绝对路径')
+chro = input('输入你下载的chromedriver的绝对路径，或者，把chromedriver.exe放到这个文件夹中，输入相对路径')
 urllogin = 'http://www.mooc.whu.edu.cn/portal'
 
 
