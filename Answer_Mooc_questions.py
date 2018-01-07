@@ -2,7 +2,7 @@
 from selenium.common.exceptions import WebDriverException
 
 
-chro = '/home/xingjiali/Documents/extracurricular/Python/Browsers/chromedriver/chromedriver'
+chro = input('输入你下载的chromedriver的绝对路径')
 urllogin = 'http://www.mooc.whu.edu.cn/portal'
 
 
@@ -30,7 +30,6 @@ driver.find_element_by_class_name("loginSub").click()
 driver.save_screenshot('screenshot.png')
 codeid = input('input your id: ')
 codepw = input('input your password: ')
-# code = input('input the verifying code: ')
 
 driver.find_element_by_id("username").send_keys(codeid)
 driver.find_element_by_name("password").send_keys(codepw)
